@@ -1,5 +1,7 @@
 const jwt = require("jsonwebtoken");
 
+// defining a meddleware which used to verify the auth_token
+
 module.exports = async function (req, res, next) {
   try {
     const token = req.header("auth-token");

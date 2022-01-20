@@ -52,7 +52,10 @@ router.post("/login", async (req, res) => {
         id: user._id,
         type: user.type,
       },
-      process.env.SECRET
+      process.env.SECRET,
+      {
+        expiresIn: "7d",
+      }
     );
 
     res.header("auth-token", token).send({ token });
@@ -64,7 +67,7 @@ router.post("/login", async (req, res) => {
 // logout
 
 router.get("/logout", (req, res) => {
-  res.header("auth-token", "").send("Logged out successfully");
+  res.header("auth-token", " ").send("Logged out successfully");
 });
 
 module.exports = router;
