@@ -9,38 +9,38 @@ regarding to the delivery.
 - service is resbonsible for loggin users out from the system
 ```
 
-### The Used Technologys in development
+## The Stack
 
 Used: Javascript | Nodejs | MongoDB | Mongoose | VScode | JWT
 
-### How to install
+## How to install
 
 ```
-- git clon <>
+- git clon <https://github.com/Mamdouh22/Authentication_Nodejs.git>
 - npm install
 - npm run start
 ```
 
-##### How i identify and secure user's session?
+> How i identify and secure user's session.
 
 ```
 by using jsonwebtoken with given payload{user_id , user_type} and SECRET
-to fead the token and meke it more hashed and secure.
+to feed the token and meke it more hashed and secure.
 ```
 
-##### how to keep user's session valid
+> how i keep user's session valid.
 
 ```
 by giving the token an expiration date
 ```
 
-##### way to force invalidating sessions
+> way i force invalidating sessions.
 
 ```
 To force all sessions on all browsers to have to re-login, I simply clear the token.
 ```
 
-##### how to assign specific user a specific role or permission.
+> how i assign specific user a specific role or permission.
 
 ```
 by defining a user type in user model and nvigate the roles and permissions based on the type of user
