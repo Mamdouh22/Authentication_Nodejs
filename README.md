@@ -11,7 +11,7 @@ regarding to the delivery.
 
 ## The Stack
 
-Used: Javascript | Nodejs | MongoDB | Mongoose | VScode | JWT
+Used: Javascript | Nodejs | MongoDB | Mongoose | VScode | JWT | Rest API
 
 ## How to install
 
